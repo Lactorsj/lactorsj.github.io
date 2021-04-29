@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1619664007315">
+  <link rel="stylesheet" href="/css/style.css?v=1619665696421">
 <meta name="generator" content="Hexo 5.3.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -153,8 +153,8 @@
   
   <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2021年04月29日</a>
-    <a><i class="nexmoefont icon-areachart"></i>967 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
+    <a><i class="nexmoefont icon-areachart"></i>863 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 5 分钟</a>
 </div>
 
   <div class="nexmoe-post-right">
@@ -193,8 +193,52 @@
 <p>Example 2:</p>
 <p>Enter code and petrol price for each region.<br>Wellington code is 4, Auckland code is 9, enter -1 to stop.<br>9  2.46<br>9  2.57<br>-1<br>Auckland average petrol price is $2.51<br>No prices entered for Wellington.</p>
 <p>Enter your C++ code in the text box below.  If you like, you can test your program in Atom (or any other system) and then copy your program into the text box.</p>
-<h3 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">double</span> Wellington_Petrol[<span class="number">5000</span>], Auckland_Petrol[<span class="number">5000</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> zip_code;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Enter code and petrol price for each region.\n&quot;</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Wellington code is 4, Auckland code is 9, enter -1 to stop.&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; zip_code;</span><br><span class="line">    <span class="keyword">int</span> well_num = <span class="number">0</span>, auck_num = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(zip_code != <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (zip_code == <span class="number">9</span>)</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; Auckland_Petrol[auck_num ++];</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; Wellington_Petrol[well_num ++];</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; zip_code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (auck_num == <span class="number">0</span>)</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;No prices entered for Auckland.&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Auckland average petrol price is $&quot;</span>;</span><br><span class="line">        <span class="keyword">double</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; auck_num; i ++)</span><br><span class="line">            sum += Auckland_Petrol[i];</span><br><span class="line">        sum /= auck_num;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%.2lf\n&quot;</span>, sum);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (well_num == <span class="number">0</span>)</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;No prices entered for Wellington.&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Wellington average petrol price is $&quot;</span>;</span><br><span class="line">        <span class="keyword">double</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; well_num; i ++)</span><br><span class="line">            sum += Wellington_Petrol[i];</span><br><span class="line">        sum /= well_num;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%.2lf\n&quot;</span>, sum);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h3><pre><code class="cpp">#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+using namespace std;
+double Wellington_Petrol[5000], Auckland_Petrol[5000];
 
+int main(int argc, char const *argv[])
+&#123;
+    int zip_code;
+    cout &lt;&lt; &quot;Enter code and petrol price for each region.\n&quot;;
+    cout &lt;&lt; &quot;Wellington code is 4, Auckland code is 9, enter -1 to stop.&quot; &lt;&lt; endl;
+    cin &gt;&gt; zip_code;
+    int well_num = 0, auck_num = 0;
+    while(zip_code != -1)
+    &#123;
+        if (zip_code == 9)
+            cin &gt;&gt; Auckland_Petrol[auck_num ++];
+        else 
+            cin &gt;&gt; Wellington_Petrol[well_num ++];
+        cin &gt;&gt; zip_code;
+    &#125;
+    if (auck_num == 0)
+        cout &lt;&lt; &quot;No prices entered for Auckland.&quot; &lt;&lt; endl;
+    else 
+    &#123;
+        cout &lt;&lt; &quot;Auckland average petrol price is $&quot;;
+        double sum = 0;
+        for (int i = 0; i &lt; auck_num; i ++)
+            sum += Auckland_Petrol[i];
+        sum /= auck_num;
+        printf(&quot;%.2lf\n&quot;, sum);
+    &#125;
+    if (well_num == 0)
+        cout &lt;&lt; &quot;No prices entered for Wellington.&quot; &lt;&lt; endl;
+    else 
+    &#123;
+        cout &lt;&lt; &quot;Wellington average petrol price is $&quot;;
+        double sum = 0;
+        for (int i = 0; i &lt; well_num; i ++)
+            sum += Wellington_Petrol[i];
+        sum /= well_num;
+        printf(&quot;%.2lf\n&quot;, sum);
+    &#125;
+
+    return 0;
+&#125;
+</code></pre>
 <hr>
 <h2 id="Problem-b"><a href="#Problem-b" class="headerlink" title="Problem #b"></a>Problem #b</h2><h3 id="Introduction-1"><a href="#Introduction-1" class="headerlink" title="Introduction"></a>Introduction</h3><p>The following program reads in values and then counts how many times each value appears. Here is an example of the OUTPUT (but not the INPUT) when the program is running:</p>
 <p>Here are the values and how many times each value appears:</p>
@@ -231,7 +275,64 @@
 <p>In the example, you can see that 18 appears 3 times, 64  appears 2 times, and so on.  There is no order (nothing is sorted), it just depends on when each value is entered.</p>
 <p>You can see the program below. However, the program is not working because there are 10 errors in it. For each error, write down the line number of the error, what is causing the error, and what needs to be done to fix the error.  </p>
 <p>Enter your answers into the text box below.</p>
-<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">readvalues</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> data[<span class="number">3</span>], howmany[<span class="number">100</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> num;</span><br><span class="line">  <span class="comment">// Section 1: read numbers with trailing value of -1</span></span><br><span class="line">  num = readvalues();</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Section 2: count how many times each number appears</span></span><br><span class="line">  countvalues(num);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Section 3: display the results</span></span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Here are the values and how &quot;</span>;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;many times each value appears:\n&quot;</span>;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;        Values:&quot;</span>;</span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">    <span class="built_in">cout</span>.width(<span class="number">4</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; right &lt;&lt; data[i];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;\nHow many times:&quot;</span>;</span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; number; i++) &#123;</span><br><span class="line">    <span class="built_in">cout</span>.width(<span class="number">4</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; right &lt;&lt; howmany[i];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">readvalues</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i, temp;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Enter a positive value (-1 to stop): &quot;</span>;</span><br><span class="line">  <span class="built_in">cin</span> &gt;&gt; temp;</span><br><span class="line">  i = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> (temp &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    data[i] = temp;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Enter a positive value (-1 to stop): &quot;</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; temp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">countvalues</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i, j;</span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">    howmany = <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (data[i] == data[i]) &#123;</span><br><span class="line">        howmany[i] = <span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre><code class="cpp"> #include &lt;iostream&gt;
+ using namespace std;
+
+ int readvalues();
+
+ int data[3], howmany[100];
+
+ int main() &#123;
+   int num;
+   // Section 1: read numbers with trailing value of -1
+   num = readvalues();
+
+   // Section 2: count how many times each number appears
+   countvalues(num);
+
+   // Section 3: display the results
+   cout &lt;&lt; &quot;Here are the values and how &quot;;
+   cout &lt;&lt; &quot;many times each value appears:\n&quot;;
+   cout &lt;&lt; &quot;        Values:&quot;;
+   for (i = 0; i &lt; num; i++) &#123;
+     cout.width(4);
+     cout &lt;&lt; right &lt;&lt; data[i];
+   &#125;
+   cout &lt;&lt; &quot;\nHow many times:&quot;;
+   for (i = 0; i &lt; number; i++) &#123;
+     cout.width(4);
+     cout &lt;&lt; right &lt;&lt; howmany[i];
+   &#125;
+   cout &lt;&lt; endl;
+ &#125;
+
+ void readvalues() &#123;
+   int i, temp;
+   cout &lt;&lt; &quot;Enter a positive value (-1 to stop): &quot;;
+   cin &gt;&gt; temp;
+   i = 0;
+   while (temp &lt; 0) &#123;
+     data[i] = temp;
+     cout &lt;&lt; &quot;Enter a positive value (-1 to stop): &quot;;
+     cin &gt;&gt; temp;
+   &#125;
+   return i;
+ &#125;
+
+ void countvalues(int n) &#123;
+   int i, j;
+   for (i = 0; i &lt; n; i++) &#123;
+     howmany = 0;
+   &#125;
+   for (i = 0; i &lt; n; i++) &#123;
+     for (j = 0; j &lt; n; j++) &#123;
+       if (data[i] == data[i]) &#123;
+         howmany[i] = 1;
+       &#125;
+     &#125;
+   &#125;
+ &#125;
+</code></pre>
 <h3 id="Answer-1"><a href="#Answer-1" class="headerlink" title="Answer"></a>Answer</h3><ul>
 <li><p>Error 01 @ line 05: add “void countvalues(int n);”</p>
 </li>
@@ -287,9 +388,9 @@
         clientID: '80b2453b6d5f37ad6225',
         clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
         id: window.location.pathname,
-        repo: 'nexmoe.github.io',
-        owner: 'nexmoe',
-        admin: 'nexmoe'
+        repo: 'Lactorsj.github.io',
+        owner: 'Lactorsj',
+        admin: 'Lactorsj'
     })
     gitalk.render('gitalk')
 </script>
@@ -308,7 +409,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1619664007317"></script>
+ <script src="/js/app.js?v=1619665696423"></script>
 
   
 
